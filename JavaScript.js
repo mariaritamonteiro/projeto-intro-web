@@ -1,4 +1,4 @@
-//**PROJETO**//
+
 const cursos = [
     {
         curso: "HTMLeCSS",
@@ -175,7 +175,7 @@ const buscarCurso = (nomeCurso) => {
 
 
 }
-console.log(buscarCurso("HTMLeCSS"))
+buscarCurso("HTMLeCSS")
 
 
 //buscar turma
@@ -191,7 +191,7 @@ const buscarTurma = (nomeTurma) => {
     return "Turma não encontrada!"
 
 }
-console.log(buscarTurma("Sibyla"))
+buscarTurma("Sibyla")
 
 
 
@@ -308,9 +308,6 @@ const carrinho = (nomeCurso) => {
 
 
     return carrinhoCursos
-
-
-
 }
 
 
@@ -322,6 +319,4 @@ const relatorioEstudante = (nomeEstudante) => {
     return `Aluno: ${estudante.aluno}\n Turma:${estudante.turma}\n Curso: ${estudante.curso}\n Valor Total: ${estudante.valor}\n valor parcela ${estudante.parcelas}\n N° Parcelas ${estudante.nParcelas}`
 
 }
-console.log(relatorioEstudante('Lashana Lynch'))
-
-
+relatorioEstudante('Lashana Lynch')
